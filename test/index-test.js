@@ -40,3 +40,18 @@ function cats() {
 
   cats.push("Milo", "Otis", "Garfield");
 };
+
+
+const employee = {
+  name: "sakarie",
+  street: "gül cadd"
+};
+
+let infoUpdate = {...employee, position: "secretary"};
+
+infoUpdate.country = "somaliland";
+
+delete infoUpdate.street;
+const {position, ...newEmployee}  = employee;
+console.log(infoUpdate);
+console.log(newEmployee);
