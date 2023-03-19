@@ -34,3 +34,9 @@ describe( 'the local repository', () => {
   } )
 
 } )
+
+function cats() {
+  cats.length = 0;
+
+  cats.push("Milo", "Otis", "Garfield");
+};
