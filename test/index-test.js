@@ -55,3 +55,16 @@ delete infoUpdate.street;
 const {position, ...newEmployee}  = employee;
 console.log(infoUpdate);
 console.log(newEmployee);
+
+
+
+function thanksBirthday(names, messages) {
+  for (let i = 0; i < names.length; i++) {
+    const name = names[i];
+    const message = messages[i];
+    console.log(`Thank you, ${name}! ${message}`);
+  }
+}
+const names = ['kishi', 'halit', 'maher'];
+const messages = ['Your support means a lot to us.', 'thanks for beutiful birthday gift!', 'Thanks for birthday wishes.'];
+sendThanks(names, messages);
