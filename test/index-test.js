@@ -35,6 +35,32 @@ describe( 'the local repository', () => {
 
 } )
 
+function distanceFromHqİnFeet (pickuplocation) {
+  const  distanceFromHqİnBlock = 42 ;
+    const numberofblock = pickuplocation - distanceFromHqİnBlock;
+    console.log(numberofblock)
+    const unitconvert = numberofblock * 264 
+    console.log(unitconvert)
+  
+  }
+  distanceFromHqİnFeet(72)
+  
+  function calculateFarePrices(start, destination) {
+    const netLocation = destination - start;
+    const netLocationFeet = netLocation * 264
+    let price = netLocation * 2;
+  
+    if (netLocation === 400) {
+      price = 0;
+    } else if (netLocationFeet > 400) {
+      price = (netLocationFeet - 400) * 2 + 400;
+    }
+  
+    return price;
+  }
+  
+  console.log(calculateFarePrices(42, 72)); 
+
 function cats() {
   cats.length = 0;
 
@@ -68,3 +94,18 @@ function thanksBirthday(names, messages) {
 const names = ['kishi', 'halit', 'maher'];
 const messages = ['Your support means a lot to us.', 'thanks for beutiful birthday gift!', 'Thanks for birthday wishes.'];
 sendThanks(names, messages);
+
+
+function countDown(num) {
+  while (num >= 0) {
+    console.log(num);
+    num--;
+  }
+}
+
+countDown(10);
+
+
+
+
+  
