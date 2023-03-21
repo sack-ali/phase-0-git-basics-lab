@@ -35,6 +35,18 @@ describe( 'the local repository', () => {
 
 } )
 
+
+function wrapAdjective(flair = "*") {
+  return function(adj = "special") {
+    return `You are ${flair}${adj}${flair}!`;
+  }
+}
+
+const encouragingPromptFunction = wrapAdjective("!!!");
+console.log(encouragingPromptFunction()); 
+console.log(encouragingPromptFunction("awesome")); 
+
+
 function distanceFromHqİnFeet (pickuplocation) {
   const  distanceFromHqİnBlock = 42 ;
     const numberofblock = pickuplocation - distanceFromHqİnBlock;
